@@ -36,7 +36,7 @@ def read_data(tablename):
     return data
 
 #数据概览
-data = pd.read_csv(r"E:\pycharm\pycharm_script\kaggle\fresh_comp_offline\fresh_comp_offline\tianchi_fresh_comp_train_user.csv")
+data = pd.read_csv(r"data1_10.csv")
 pandas_df_to_Markdown_table(data.head())
 type_data = data.dtypes
 index_data = pd.DataFrame(type_data.index.tolist(),index=type_data.index,columns=['column'])
